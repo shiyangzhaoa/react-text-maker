@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.react-text-maker .highlight-hint::after {
+  content: attr(data-hint);
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-left: 2px;
+  vertical-align: top;
+}
