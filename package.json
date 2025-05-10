@@ -1,6 +1,8 @@
 {
   "name": "react-text-maker",
   "version": "0.0.2",
+  "repository": "https://github.com/shiyangzhaoa/react-text-maker.git",
+  "bugs": "https://github.com/shiyangzhaoa/react-text-maker/issues",
   "type": "module",
   "main": "./dist/text-maker.umd.js",
   "module": "./dist/text-maker.es.js",
