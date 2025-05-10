@@ -43,6 +43,7 @@ pnpm add react-text-maker
 
 ```tsx
 import { ReactTextMaker } from 'react-text-maker';
+import 'react-text-maker/dist/style.css';
 
 function App() {
   const [highlights, setHighlights] = useState([]);

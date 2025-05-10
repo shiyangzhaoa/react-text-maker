@@ -8,20 +8,20 @@
   <img src="./logo.svg" alt="Tailwind Tool">
 </p>
 <p>
-  <a href="https://www.npmjs.com/package/react-text-maker"><img src="https://img.shields.io/npm/dm/react-text-maker?style=flat-square" alt="总下载量"></a>
-  <a href="https://www.npmjs.com/package/react-text-maker"><img src="https://img.shields.io/bundlephobia/minzip/react-text-maker?style=flat-square" alt="最新版本"></a>
-  <a href="https://github.com/shiyangzhaoa/react-text-maker/blob/main/LICENSE"><img src="https://shields.io/github/license/shiyangzhaoa/react-text-maker?style=flat-square" alt="许可证"></a>
+  <a href="https://www.npmjs.com/package/react-text-maker"><img src="https://img.shields.io/npm/dm/react-text-maker?style=flat-square" alt="Total Downloads"></a>
+  <a href="https://www.npmjs.com/package/react-text-maker"><img src="https://img.shields.io/bundlephobia/minzip/react-text-maker?style=flat-square" alt="Latest Release"></a>
+  <a href="https://github.com/shiyangzhaoa/react-text-maker/blob/main/LICENSE"><img src="https://shields.io/github/license/shiyangzhaoa/react-text-maker?style=flat-square" alt="License"></a>
 </p>
 
-## 功能特点
+## 特性
 
 - 🎨 可自定义高亮颜色和主题
 - 🖱️ 交互式文本选择和高亮
-- ⌨️ 支持键盘快捷键（Delete/Backspace 删除高亮）
+- ⌨️ 键盘快捷键支持（Delete/Backspace 删除高亮）
 - 🎯 支持多个高亮和嵌套范围
-- ♿ 支持无障碍访问
+- ♿ 无障碍支持
 - 📱 响应式设计
-- 🧪 全面的测试覆盖
+- 🧪 完整的测试覆盖
 - 🔍 可自定义提示显示
 - 🎭 基于主题的高亮
 - ⚡ 实时高亮更新
@@ -39,17 +39,20 @@ yarn add react-text-maker
 pnpm add react-text-maker
 ```
 
-## 使用方法
+## 使用
 
 ```tsx
+// 导入组件
 import { ReactTextMaker } from 'react-text-maker';
+// 导入 CSS 文件
+import 'react-text-maker/dist/style.css';
 
 function App() {
   const [highlights, setHighlights] = useState([]);
 
   return (
     <ReactTextMaker
-      text="在这里输入您的文本内容"
+      text="你的文本内容"
       hint="注释"
       onChange={setHighlights}
       onMarkClick={(ids) => console.log('点击的高亮:', ids)}

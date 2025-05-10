@@ -1,15 +1,24 @@
-import { dirname, resolve } from 'path'
-import { fileURLToPath } from 'url'
+import { dirname, resolve } from 'path';
+import { fileURLToPath } from 'url';
 
-import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
+import dts from 'vite-plugin-dts';
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    dts({
+      include: ['src/**/*.tsx', 'src/**/*.ts'],
+      outDir: 'dist/types',
+      rollupTypes: true,
+      insertTypesEntry: true,
+    }),
+  ],
   build: {
     lib: {
       entry: resolve(__dirname, 'src/ReactTextMaker.tsx'),
@@ -29,5 +38,6 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true
-  }
-})
+  },
+  publicDir: false,
+});
