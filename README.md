@@ -5,7 +5,7 @@ English | [简体中文](README.zh-CN.md)
 A React component for text highlighting and annotation with customizable themes and interactive features.
 
 <p>
-  <img src="./logo.svg" alt="Tailwind Tool">
+  <img src="https://raw.githubusercontent.com/shiyangzhaoa/react-text-maker/130be7a481f79713293fa6b98570b29868c0176d/logo.svg" alt="Tailwind Tool">
 </p>
 <p>
   <a href="https://www.npmjs.com/package/react-text-maker"><img src="https://img.shields.io/npm/dm/react-text-maker?style=flat-square" alt="Total Downloads"></a>
@@ -19,7 +19,6 @@ A React component for text highlighting and annotation with customizable themes 
 - 🖱️ Interactive text selection and highlighting
 - ⌨️ Keyboard shortcuts support (Delete/Backspace to remove highlights)
 - 🎯 Multiple highlight support with nested ranges
-- ♿ Accessibility support
 - 📱 Responsive design
 - 🧪 Comprehensive test coverage
 - 🔍 Customizable hint display

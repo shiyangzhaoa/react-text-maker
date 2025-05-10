@@ -126,18 +126,3 @@ The component supports the following keyboard shortcuts:
 2. The `onMarkRemove` callback can return a `boolean` value to control whether highlight removal is allowed.
 3. Highlights support nesting, allowing multiple different types of highlights in the same text area.
 4. Theme colors can be specified as an array of strings or objects, with the object array method allowing independent colors for each hint type.
-
-## TypeScript
-
-ReactTextMaker is fully written in TypeScript and provides complete type definitions.
-
-```tsx
-import type { TextMakerProps } from 'react-text-maker'
-
-// Using types
-const props: TextMakerProps = {
-  initialText: 'Hello',
-  onChange: (text) => console.log(text),
-  className: 'custom-class'
-}
-``` 
