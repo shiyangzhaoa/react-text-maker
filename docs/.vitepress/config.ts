@@ -6,6 +6,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   title: 'React Text Maker',
   description: 'A React component for text highlighting and annotation',
+  base: '/react-text-maker/',
   vite: {
     plugins: [react()],
     resolve: {
