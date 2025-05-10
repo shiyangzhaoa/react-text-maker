@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-
-import { ReactTextMaker, DEFAULT_THEME } from '../../src/ReactTextMaker';
+import { ReactTextMaker, DEFAULT_THEME } from 'react-text-maker';
 
 const TEXT = `Premium Cotton Blend T-Shirt
 Made in USA

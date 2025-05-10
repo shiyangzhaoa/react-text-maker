@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-
-import { ReactTextMaker } from '../../src/ReactTextMaker';
+import { ReactTextMaker } from 'react-text-maker';
 
 import { APP } from './app';
 import './style.css';
