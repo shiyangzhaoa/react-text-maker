@@ -1,6 +1,5 @@
 {
   "name": "react-text-maker",
-  "private": true,
   "version": "0.0.1",
   "type": "module",
   "main": "./dist/text-maker.umd.js",
